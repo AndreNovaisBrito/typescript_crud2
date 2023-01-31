@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CRUD Front-end</title>
+  <script src="index.js"></script>
+</head>
+<body>
+  <h1>CRUD Front-end</h1>
+
+  <!-- Create User Form -->
+  <h2>Create User</h2>
+  <form action="/create-user" method="post">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email"  />
+    <input type="password" name="password" placeholder="Password"  />
+    <button type="submit">Create User</button>
+  </form>
+
+  <!-- View Users -->
+  <h2>View Users</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Dynamic Content -->
+    </tbody>
+  </table>
+
+  <!-- Update User Form -->
+  <h2>Update User</h2>
+  <form action="/update-user" method="post">
+    <input type="hidden" name="id" />
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="email" name="email" placeholder="Email" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <button type="submit">Update User</button>
+  </form>
+
+  <!-- Delete User Form -->
+  <h2>Delete User</h2>
+  <form action="/delete-user" method="post">
+    <input type="hidden" name="id" />
+    <button type="submit">Delete User</button>
+  </form>
+</body>
+</html>
